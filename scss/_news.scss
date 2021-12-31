@@ -1,0 +1,164 @@
+@use "./global" as g;
+
+.news-content-big{
+  background: g.$main-color;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.big-left{
+  flex: 1;
+
+  h2{
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+    line-height: 1.6;
+  }
+
+  a{
+    display: inline-block;
+    padding: .75rem 3rem .75rem 1.25rem;
+    color: #fff;
+    background: g.$bg-color;
+    font-family: sans-serif;
+    position: relative;
+
+    &::after{
+      content: "";
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      left: 88%;
+      height: 1px;
+      background: #fff;
+      transition: all .5s
+    }
+
+    &:hover::after{
+      width: 50px;
+    }
+  }  
+}
+
+.big-right{
+  flex: 1;
+  order: -1;
+
+  img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.news-content-all{
+  margin-top: 5rem;
+}
+
+.news-all-items{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  grid-row-gap: 5rem;
+}
+
+.news-all-item{
+
+  a{
+    width: 100%;
+
+    img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  p{
+    color: #fff;
+    font-size: 18px;
+    margin-top: .5rem;
+    line-height: 1.6;
+
+
+    a{
+      color: inherit;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.news-bottom{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 768px) {
+  /********** news **********/
+  
+  .news-all-items{
+    grid-template-columns: repeat(2, 48%);
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  
+  .news-content-big{
+    padding: 3rem 0;
+    
+    .container{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .big-left{
+
+    h2{
+      margin-bottom: 3rem;
+      letter-spacing: 1px;
+      max-width: 450px;
+    }
+  }
+
+  .big-right{
+    order: 1;
+  }
+
+  .news-content-all{
+    margin-top: 8rem;
+  }
+
+  .news-all-items{
+    grid-template-columns: repeat(3, 31%) !important;
+  }
+
+}
+
+@media (max-width:1199.98px) {
+  .news-all-item a img, .big-right img {
+    height: 150px;
+  }
+
+  .news-all-items {
+    grid-row-gap: 2.5rem;
+    p{font-size: 15px;}
+  }
+
+  .news-content-all {
+    margin-top: 2.5rem;
+  }
+}

@@ -1,0 +1,69 @@
+.pdf-view{
+    height: 100vh;
+
+    .navbar{
+        top: 20px;
+    }
+
+    .nav-menu a{
+        color: #000 !important;
+    }
+
+    .nav-logo{
+        
+        span{
+            color: #000 !important;
+        }
+
+        img:first-child{
+            display: none;
+        }
+
+        img:last-of-type{
+            display: block;
+        }
+    }
+
+    .submenu ul a:hover{
+        color: #fff !important;
+    }
+
+    .zuruck{
+        z-index: 984217465541;
+        
+        a{
+            background: #d5a080;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            padding: 11px 35px 10px;
+        }
+    }
+
+    &-wrap{
+        
+        .flipbook-main-wrapper {
+            top: 130px;
+            bottom: 10px;
+        }
+
+        .flipbook-bookLayer{
+            top: 50px !important;
+            bottom: 100px !important;
+        }
+    }
+
+    &-content{
+        z-index: 9999999;
+        top: 100px;
+
+        h2{
+            font-weight: 500;
+            line-height: 45px;
+            color: #6e605c;
+            letter-spacing: -2px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+}

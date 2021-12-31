@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flipbook.style.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="pdf-view">
+
+  <div class="h-100">
+    <div class="h-100">
+      <div id="pdf-book">           
+      </div>
+    </div>
+  </div>
+
+  <div class="position-absolute bottom-0 translate-middle start-50" style="z-index: 989898747;">
+    <a href="karl-marx.html#apart" class="zuruck d-inline-block text-white rounded-pill border-0">ZURÜCK</a>
+  </div>
+
+  
+  <!--##### Popup #####-->
+  <div class="yaskoPopup modal">
+    <div class="popup">
+      <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+          <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+        </svg>
+      </div>
+      <div class="content">
+       
+      </div>
+    </div>
+  </div>
+  <!--##### Popup #####-->
+
+  <!--##### CALL #####-->
+  <div id="call">
+    <div class="call-box">
+      <div class="close"><span class="icon-close"></span></div>
+      <form class="call-form">
+        <h2>Wir rufen Sie an</h2>
+        <div class="call-input">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Vorname">
+          <input type="email" placeholder="E-Mail">  
+          <input type="tel" placeholder="Telefonnummer">
+          <textarea placeholder="Nachricht"></textarea>
+        </div>
+        <label>
+          <input type="checkbox">
+          <span></span>
+          <div>
+            Hiermit akzeptiere ich die auf dieser Webseite geltende.
+          <a href="#">Datenschutzerklärung</a>
+          </div>
+        </label>
+        <button type="submit">Senden</button>
+      </form>
+    </div>
+  </div>
+  <!--##### CALL #####-->
+  
+  <!--##### HAMBURGER #####-->
+  <div id="hamburger">
+    <div class="close">
+      <span class="icon-close"></span>
+    </div>
+  
+    <div class="ham-wrapper">
+      
+      <ul class="menu">
+  
+        <!-- li 2 -->
+        <li class="item">
+          <h4><a href="/">Start</a></h4>
+        </li>
+
+        <li class="item">
+          <h4><a href="projects.html">Projekte</a></h4>
+        </li>
+
+
+        <li class="item">
+          <h4><a href="leistungen.html">Leistungen</a></h4>
+        </li>
+
+        <li class="item">
+          <h4><a href="#">Uber Uns</a></h4>
+          <ul class="submenu">
+            <li class="subitem"><a href="who-we-are.html">Wer wir sind</a></li>
+            <li class="subitem"><a href="about.html">Vorstand</a></li>
+            <li class="subitem"><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </li>
+
+        <li class="item hidden-md">
+          <h4><a href="#">Language</a></h4>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">DE</a></li>
+            <li class="subitem"><a href="#">EN</a></li>
+            <li class="subitem"><a href="#">TR</a></li>
+          </ul>
+        </li>
+  
+    
+      </ul>
+    </div>
+  </div>
+  <!--##### HAMBURGER #####-->
+
+  <!--##### NAVBAR #####-->
+  <nav class="navbar">
+    <div class="container f-align-center">
+      <!-- navbar brand-->
+      <a class="nav-logo" href="/#home">
+        <img src="img/logo-light.png" alt=">Yasko Logo" width="25" height="25" class="light-logo">
+        <img src="img/logo-dark.png" alt=">Yasko Logo" width="25" height="25" class="dark-logo">
+        <span>YASKO</span>
+      </a>
+      <!-- menu -->
+      <ul class="nav-menu">
+        <li><a href="/">Start</a></li>
+        <li><a href="projects.html">Projekte</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li class="submenu">
+          <a href="#">Uber Uns</a>
+          <ul>
+            <li><a href="who-we-are.html">Wer wir sind</a></li>
+            <li><a href="about.html">Vorstand</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- nav-end -->
+      <ul class="nav-end f-align-center">
+        <li><a class="end-call" href="#"><span class="icon icon-message-box"></span><span class="hidden-s">Rückruf anfragen</span></a></li>
+        <li class="lang hidden-s">
+          <div class="lang-content active">
+            <a href="#"> DE </a>
+            <a href="#"> EN </a>
+            <a href="#"> TR </a>
+          </div>
+        </li>
+  
+        <li><a class="end-toggle active" href="#"><span></span></a></li>
+      </ul>        
+    </div>
+  </nav>
+  <!--##### NAVBAR #####-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/flipbook.min.js"></script>
+<script src="js/index.js"></script>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+      jQuery("#pdf-book").flipBook({
+          pdfUrl:"pdf/karl_max.pdf",
+          backgroundColor:"#fff"
+      });
+  })
+</script>
+</body>
+</html>

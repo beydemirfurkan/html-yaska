@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'cha-regular';
+  src: url(./font/chalet_lonninsev-webfont.eot);
+  src: url(./font/chalet_lonninsev-webfont.eot?#iefix) format('embedded-opentype'),url(./font/chalet_lonninsev-webfont.woff2) format('woff2'),url(./font/chalet_lonninsev-webfont.woff) format('woff'),url(./font/chalet_lonninsev-webfont.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'cha-bold';
+  src: url(./font/chalet_newyorninsev-webfont.eot);
+  src: url(./font/chalet_newyorninsev-webfont.eot?#iefix) format('embedded-opentype'),url(./font/chalet_newyorninsev-webfont.woff2) format('woff2'),url(./font/chalet_newyorninsev-webfont.woff) format('woff'),url(./font/chalet_newyorninsev-webfont.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'cha-thin';
+  src: url(./font/chalet_parisnineteenseventy-webfont.eot);
+  src: url(./font/chalet_parisnineteenseventy-webfont.eot?#iefix) format('embedded-opentype'),url(./font/chalet_parisnineteenseventy-webfont.woff2) format('woff2'),url(./font/chalet_parisnineteenseventy-webfont.woff) format('woff'),url(./font/chalet_parisnineteenseventy-webfont.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(./font/icomoon.eot?e0c2su);
+  src: url(./font/icomoon.eot?e0c2su#iefix) format('embedded-opentype'),url(./font/icomoon.woff2?e0c2su) format('woff2'),url(./font/icomoon.ttf?e0c2su) format('truetype'),url(./font/icomoon.woff?e0c2su) format('woff'),url(./font/icomoon.svg?e0c2su#icomoon) format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+[class^="icon-"],[class*=" icon-"] {
+  font-family: 'icomoon'!important;
+  //speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+
+.icon-notsound:before {
+  content: ""
+}
+
+.icon-download:before {
+  content: ""
+}
+
+.icon-play-button:before {
+  content: ""
+}
+
+.icon-information:before {
+  content: ""
+}
+
+.icon-refresh:before {
+  content: ""
+}
+
+.icon-sound:before {
+  content: ""
+}
+
+.icon-check:before {
+  content: "";
+  color: #fff
+}
+
+.icon-filter:before {
+  content: "";
+  color: #fff
+}
+
+.icon-tag:before {
+  content: "";
+  color: #fff
+}
+
+.icon-clock:before {
+  content: "";
+  color: #fff
+}
+
+.icon-up-arrw-light:before {
+  content: ""
+}
+
+.icon-down-arrw-light:before {
+  content: ""
+}
+
+.icon-head-phone:before {
+  content: "";
+  color: #fff
+}
+
+.icon-maps-pin-v2:before {
+  content: "";
+  color: #fff
+}
+
+.icon-whatsapp:before {
+  content: "";
+  color: #fff
+}
+
+.icon-project-three-line:before {
+  content: ""
+}
+
+.icon-search:before {
+  content: ""
+}
+
+.icon-three-line:before {
+  content: ""
+}
+
+.icon-time:before {
+  content: ""
+}
+
+.icon-twitter:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-ways:before {
+  content: "";
+  color: #fff
+}
+
+.icon-youtube:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-arrow-bottom:before {
+  content: ""
+}
+
+.icon-arrow-left:before {
+  content: ""
+}
+
+.icon-arrow-right:before {
+  content: ""
+}
+
+.icon-bag:before {
+  content: "";
+  color: #fff
+}
+
+.icon-books:before {
+  content: "";
+  color: #fff
+}
+
+.icon-bus:before {
+  content: "";
+  color: #fff
+}
+
+.icon-close:before {
+  content: ""
+}
+
+.icon-facebook:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-google-plus:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-instagram:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-linked-in:before {
+  content: "";
+  color: #eaeaea
+}
+
+.icon-message-box:before {
+  content: ""
+}
+
+.icon-phone-icon:before {
+  content: ""
+}
+
+.icon-pin-big .path1:before {
+  content: "";
+  color: #000
+}
+
+.icon-pin-big .path2:before {
+  content: "";
+  margin-left: -.8203125em;
+  color: #fff
+}
+
+.icon-pin-black .path1:before {
+  content: "";
+  color: #000
+}
+
+.icon-pin-black .path2:before {
+  content: "";
+  margin-left: -.840820313em;
+  color: #fff
+}
+
+.icon-pin-brown .path1:before {
+  content: "";
+  color: #7d5348
+}
+
+.icon-pin-brown .path2:before {
+  content: "";
+  margin-left: -.818359375em;
+  color: #fff
+}
+
+.icon-pin-small:before {
+  content: ""
+}
+
+.icon-left-arrow:before {
+  content: ""
+}
+
+.icon-right-arrow:before {
+  content: ""
+}
+
+.icon-folder:before {
+  content: ""
+}
+
+.icon-phone-2:before {
+  content: ""
+}
+
+.icon-zoom:before {
+  content: ""
+}

@@ -1,0 +1,160 @@
+#map{
+  height: 100%;
+  width: 100%;
+}
+
+.map-box{
+  border-radius: 4px;
+  color: white;
+  color: white;
+  padding: 10px 20px;
+  margin-top: -5px;
+
+  img{
+    width: auto;
+    height: 30px;
+    margin: 1px 5px;
+  }
+}
+
+.marker-info{ 
+  display: inline-flex;
+  box-shadow: 0 .01rem .125rem rgba(0,0,0,.075)!important;
+}
+
+.info-image{
+  width: 300px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  height: 250px;
+}
+
+.info-text{
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:#202020;
+  background-color: #fff;
+
+  .go-prj{
+    width: 100%;
+
+    a:nth-child(1){
+      background: #6f6f6f;
+      margin-right: 25px;
+    }
+    a:nth-child(2){
+      background: #4a4a4a;
+    }
+
+    a{
+      width: 125px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .map-features{
+    margin-bottom: 25px;
+    width: 90%;
+    justify-content: space-between;
+
+    .dflex{
+      align-items: center;
+
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .hr{
+    width: 95%;
+    height: 2px;
+    background: #d0d0d0;
+    margin-bottom: 20px;
+  }
+
+  h3{
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  p{
+    font-size: .9rem;
+    color: #727272;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.gm-style-iw-d{
+  overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-c {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  padding: 0 !important;
+  box-shadow: none !important
+}
+
+.gm-ui-hover-effect{
+  top: 0px !important;
+  right: 0px !important;
+  background: white !important;
+  opacity: 1 !important;
+}
+
+.mapclick{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+
+  .container{
+
+    a{
+      width: 225px;
+      margin-right: 2rem;
+      display: inline-block;
+
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.map-title{
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 10%;
+
+  h2{
+    margin-bottom: 2rem;
+    color: rgba(33,33,33,.7);
+  }
+
+  a{
+    padding: 1rem 1.75rem;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(33,33,33,1);
+    color: #fff;
+    font-size: .7rem;
+  }
+}

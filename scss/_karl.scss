@@ -1,0 +1,733 @@
+@use "global" as g;
+////////////// KARL MARX ///////////////////////
+.page-karl-marx{
+
+    .navbar{
+      top:30px;
+    }
+  
+    .fp-tableCell{
+      display: block !important;
+    }
+  
+    #fp-nav ul li a span {
+      background: #fff !important;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  
+     
+    &.fp-viewing-botep{
+  
+      .navbar-brand{      
+        span{
+          color: #000 !important;
+        }
+      }
+  
+      .nav-menu{    
+        a{
+          color: #000 !important;
+        }
+      }
+  
+      .nav-logo{
+        .light-logo{ display: none}
+        .dark-logo{ display: block}
+        span{
+          color: #000;
+        }
+      }
+    
+      .nav-menu{
+    
+        a {
+          color: #000;
+        }
+    
+        .submenu li{
+    
+          a{
+            color: #000;
+    
+            &:hover{
+              color: #fff ;
+            }
+          }
+        }
+        
+      }
+    }
+  
+    &.fp-viewing-details, 
+    &.fp-viewing-maps, 
+    &.fp-viewing-transport, 
+    &.fp-viewing-historie, 
+    &.fp-viewing-buildtop, 
+    &.fp-viewing-buildbottom, 
+    &.fp-viewing-adress, 
+    &.fp-viewing-catalog, 
+    &.fp-viewing-apart{
+  
+      @include g.bg-change();
+    }
+  
+    h2,h3,h4{
+      font-weight: 500;
+      line-height: 45px;
+      color: #6e605c;
+      letter-spacing: -2px;
+    }
+  
+    h2{
+      font-size: 45px;
+    }
+  
+    p{
+      font-size: 15px;
+      line-height: 1.8;
+      color: #434e57 ;
+    }
+  }
+  
+  .karl{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .pkm-hero{
+    height: 100vh;
+  
+    main {
+      background: white;
+      padding: 0;
+      font-family: 'Oswald', sans-serif;
+    }
+  }
+  
+  .fw-600 {
+      font-weight: 600;
+  }
+  
+  .brown {
+    color: #6e605c;
+  }
+  
+  .brown-bg {
+    background: #6e605c;
+    color: white;
+  }
+  
+  
+  
+  //karl Hero
+  ////////////////////////////////////////////////////////////
+  .karl-hero {
+    
+    &-wrap{
+      height: 600px;
+      padding-left: 25px;
+  
+      >img{
+        object-fit: cover;
+      }
+  
+      @include g.responsive(1200){
+        height: 100%;
+        padding-left: 200px;
+  
+        img{
+          z-index: 1;
+        }
+      
+      }
+    }
+  
+    &-content{
+      z-index: 3;
+      font-family: 'Oswald', sans-serif;
+    
+      h1{
+        font-size: 65px;
+        color: #fff;
+        letter-spacing: -2px;
+      }
+  
+      p{
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+  
+      @include g.responsive(1200){
+  
+        h1{
+          font-size: 80px;
+          letter-spacing: -1px;
+          margin-bottom: - 5px;
+        }
+      }
+    }
+   
+    
+  
+  }
+  
+  
+
+  //karl Suit
+  //////////////////////////////////////////////////
+
+  .kar-suit-arrow{
+    
+    &-left, &-right{
+      display: none;
+      z-index: 999;
+    }
+  }
+
+  .karl-suit-owl{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    > img{
+      z-index: 2;
+      @include g.objFit;
+    }
+  
+    @include g.responsive(1200){
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+  
+    &-content{
+      z-index: 3;
+      padding: 0 20px;
+  
+      @include g.responsive(1200){
+        padding: 0;
+      }
+    }
+  }
+  
+  .suit-contain-left{
+    @include g.responsive(1900){
+      width: 25%;
+    }
+  }
+  
+  .suit-contain-right{
+    overflow: hidden;
+    padding-right: 80px;
+
+    &:hover{
+      cursor: none;
+    }
+  
+    .owl-stage-outer{
+      height: 100%;
+      overflow: visible;
+  
+      .owl-stage, .owl-item{
+        height: 100%;
+      }
+  
+      img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  
+    .owl-item{
+      opacity: .4;
+
+      .item{
+        padding-right: 30px;
+      }
+  
+      &.active{
+        opacity: 1;
+      }
+    }
+  
+    @include g.responsive(1200, max){
+      width: 100%;
+    }
+  
+    @include g.responsive(1200){
+      padding-right: 180px;
+    }
+  
+    @include g.responsive(1900){
+      width: 58%;
+    }
+  }
+  
+  
+//map
+/////////////////////////////////////////////////
+.karl-map{
+  
+  &-wrap{
+    
+    img{
+      @include g.objFit;
+    }
+  }
+  
+}
+  
+  
+  ///////////////////////////////////////
+  //transport
+  ///////////////////////////////////////
+  .karl-transport{
+    
+    &-wrap{
+      padding-top: 150px;
+    }
+    &-content{
+      padding-top: 150px;
+    }
+  }
+  
+  ///////////////////////////////////////
+  //karl platz
+  ///////////////////////////////////////
+  .karl-platz{
+
+    &-arrow{
+    
+      &-left, &-right{
+        display: none;
+        z-index: 999;
+      }
+    }
+  
+    &-wrap{
+      padding-top: 150px;
+      padding-bottom: 150px;
+      padding-left: 100px;
+    }
+  
+    &-carousel{
+      overflow: hidden;
+      padding-left: 150px; 
+
+      &:hover{
+        cursor: none;
+      }
+  
+      .owl-item{
+        opacity: .4;
+  
+        &.active{
+          opacity: 1;
+        }
+      }
+  
+      .owl-stage-outer, .owl-stage, .owl-item{
+        height: 100%;
+      }
+  
+      .owl-stage-outer{
+        overflow: visible;
+      }
+  
+      .item{
+        height: 100%;
+  
+        > div{
+          height: 100%;
+        }
+  
+        img{
+          height: 100%;
+          width: 100%;
+          @include g.objFit;
+        }
+      }
+    }
+  
+    &-text{
+      margin-left: 100px;
+  
+      span{
+        font-size: 25px;
+        font-family: 'Damion', cursive;
+      }
+    }
+  
+  }
+  
+  
+  
+  // KarL Build
+  //////////////////////////////////////
+  .karl-build-top{
+  
+    &-wrap{
+  
+      .overlay{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .0), #fff);
+        z-index: 2;
+      }
+    
+      > img{
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    
+      .container{
+        z-index: 6;
+        padding: 150px 0;
+      }
+    }
+  
+    &-text{
+      margin-bottom: 150px;
+    
+      a{
+        background: #6e605c;
+        color: #fff;
+        transition: all .5s;
+    
+        &:hover{
+          background: #fff;
+          color: #6e605c;
+        }
+      }
+      
+    }
+  
+  }
+  
+  
+  .karl-build-bottom{
+  
+    &-wrap{
+    
+      > img{
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    
+    }
+    
+    &-feature{
+      width: 700px;
+      background: #70625f;
+      color: #ead9d9;
+      padding: 45px 50px;
+      z-index: 9;
+      margin-bottom: 50px;
+  
+      h3{
+        color: inherit;
+      }
+    
+      .num:last-child{
+        color: rgba(162, 202, 17, 0.467);
+      }
+    
+      .num{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        &:last-child{
+          color: #ffed76;
+        }
+    
+        p{
+          margin: 0;
+          font-size: 55px;
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: -1px;
+          color: inherit;
+        }
+    
+        span{
+          letter-spacing: -1px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  //////////////////////////////////////////////
+  
+  
+  
+  //karl lamb
+  ///////////////////////////////////////
+  .karl-lamp{
+    &-wrap{
+      padding-top: 75px;
+      padding-left: 150px;
+  
+      img{
+        max-height: 650px;
+      }
+    }
+  }
+  
+  
+  
+  // Karl table
+  //////////////////////////////////////
+  .karl-suit-table{
+  
+    &-wrap{
+      .container{
+        height: auto;
+      }
+    }
+    
+    table, th , td {
+      text-align: center;
+    }
+    
+    thead {
+      background: #887b76;
+      color: #fcfcf3;
+      th {
+        padding: 1.5rem;
+      }
+    }
+  
+  
+    tbody {
+      background: #f1f1f1;
+      tr {
+        color: #867874;
+  
+        td {
+          color: #000;
+          padding: 1.5rem;
+          font-size: 1.2rem;
+        }
+      }
+  
+      td {
+        border-left: 1px solid #c8c4c4;
+      }
+  
+      th {
+        width: 200px;
+        padding-top: 15px;
+      }
+  
+      .unit {
+        background: #887b76;
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        font-size: .85rem;
+        padding:0rem .8rem;
+      }
+  
+    }
+  }
+  
+  .karl-table{
+  
+    &-wrap{
+      padding-top: 50px;
+  
+      img{
+        object-fit: cover;
+        object-position: right bottom;
+        z-index: 3;
+      }
+  
+      .table-responsive{
+        z-index: 6;
+      }
+    }
+  
+    &-content{
+  
+      thead{
+        th{
+          padding-right: 50px;
+          padding-left: 50px;
+          padding-bottom: 50px;
+        }
+      }
+  
+      tbody{
+        
+        tr:nth-child(3){
+          td{
+            background: #efedf5;
+            
+            &:first-of-type{
+              border-top-left-radius: 14px;;
+              border-bottom-left-radius: 14px;;
+            }
+            &:last-of-type{
+              border-top-right-radius: 14px;;
+              border-bottom-left-radius: 14px;;
+            }
+          }
+        }
+  
+        tr:nth-child(5){
+          td{
+            font-size: 12px;
+  
+            &.end{
+              opacity: 0.6;
+            }
+          }
+        }
+  
+        tr:nth-child(6){
+          td{
+            font-size: 13px;
+            padding-top: 35px;
+          }
+  
+          a{
+            background: #d5a080;
+          }
+        }
+  
+        tr{
+          td{
+            .badge{
+              background: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //karl viewer
+  ///////////////////////////////////////
+  .karl-viewer{
+  
+    &-wrap{
+      padding-top: 170px;
+    }
+  
+    &-book{
+      padding-left: 150px;
+    }
+  
+    &-content{
+      z-index: 987554;
+      top: 140px;
+      width: calc(100% - 100px);
+    }
+    
+    .flipbook-main-wrapper{
+      top: 190px;
+      left: 120px;
+    }
+  }
+  
+  
+  
+  //karl contact
+  //////////////////////////////////////////////////////
+  .karl-contact-top{
+    
+    &-wrap{
+      padding-top: 150px;
+  
+      background-image: linear-gradient(to top, #241d1c21 30%, rgba(255, 255, 255, 0.301) 90%);
+    
+      .container{
+        z-index: 6;
+      }
+    }
+  }
+  
+  .karl-contact-bottom{
+  
+    &-wrap{
+      padding-top: 150px;
+  
+      .overlay{
+        background-image: linear-gradient(to top, #241d1ce5 10%, #241d1cd8 35%, #241d1c65 80%, #241d1c21 100%);
+        z-index: 2;
+      }
+    
+      .container{
+        z-index: 6;
+      }
+    }
+  
+    &-form{
+      width: 90%;
+      margin:0 auto ;
+    
+      .form-floating{
+        border-bottom: 1px solid #796a68;
+    
+        label{
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+    
+      .lock{
+        color: #f0aba0;
+        font-size: 15px;
+        border-bottom: 1px solid #796a68;
+        padding: 5px 0 25px 15px;
+    
+      }
+    
+      .yasko-input {
+        font-size: 11px;
+        color: #fff;
+      }
+    }
+  
+  }
+  
+  ////////////// END KARL MARX ///////////////////////
+  
+  
+  .yasko-input{
+    input{
+      position: absolute;
+      z-index: -999;
+      opacity: 0;
+    }
+  
+    span{
+      height: 15px;
+      width: 15px;
+      border: 1px solid #7db39d;
+      display: inline-block;
+      margin-right: 6px;
+      position: relative;
+      flex: 0 0 auto;
+  
+      &::after{
+        content: "";
+        position: absolute;
+        transition: all .4s;
+      }
+    }
+  
+    input:checked + span::after{
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 9px;
+      background: #d5a080;
+    }
+  
+  }

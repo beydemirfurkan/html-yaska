@@ -1,0 +1,106 @@
+@use "./global" as g;
+
+footer, .footer{
+  padding: 2rem 0;
+  color: #333;
+  background: g.$bg-color;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (g.$minWidt1900) {
+  footer, .footer{
+  
+    .container{
+      width: 100%;
+      padding-left: 200px;
+    }
+  }
+}
+
+.copyright{
+  order: 3;
+
+  span{
+    display: block;
+    text-align: center;
+    font-size: .8rem;
+    color: #aaaaaa;
+    margin-bottom: .5rem;
+
+    a{
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.social{
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  order: 2;
+
+  ol{
+    display: flex;
+    justify-content: center;
+
+    a{
+      margin: 0 1rem;
+    }
+  }
+}
+
+@media (g.$minWidt768) {
+
+  footer, .footer{
+    padding: 1.25rem 0 1.25rem 0;
+  
+    .container{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 50px;
+    }
+  }
+
+  .copyright{
+    margin-left: auto;
+    margin-right: 2.5rem;
+    
+    span{
+      text-align: right;
+    }
+  }
+
+  .social{
+    order: 3;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    ol{
+
+      a{
+        margin: 0 .5rem;
+        flex-basis: 33.333%;
+      }
+    }
+  }
+  
+}
+
+@media (g.$minWidt992) {
+
+  footer, .footer{ 
+    .container{
+      padding-top: 0px;
+    }
+  }
+  
+}

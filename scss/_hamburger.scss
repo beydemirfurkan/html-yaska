@@ -1,0 +1,133 @@
+@use "./global" as g;
+
+#hamburger{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #000;
+  z-index: 99;
+  display: none;
+  width: 350px;
+  padding: 4rem 3rem;
+
+  .close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 45px;
+    background: #ffffff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+    transition: all 0.7s;
+
+    &:hover{
+      background: g.$main-color;
+      color: #fff;
+    }
+
+    span{
+      line-height: 45px !important;
+      font-size: .9rem;
+    }
+  }
+}
+
+.ham-wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {display: none;}
+
+  .menu{
+    width: 100%;
+    height: 100%;
+  }
+
+  .submenu{
+    display: none;
+    transition: all .6s;
+    opacity: 0;
+
+    li:last-child{
+      border:none;
+    }
+  }
+
+  .menu{
+
+    li{
+      border-bottom: solid 1px rgba(255,255,255,.2);
+      transition: all .5s;
+      margin-bottom: 1.5rem;
+      padding-bottom: .5rem;
+
+      h4{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        &:hover{
+          color: g.$main-color;
+        }
+        
+        a{ 
+          font-size: 1rem;
+          color: inherit;
+          font-family: inherit;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .item:hover .submenu{
+      display: block;
+      margin-top: 1.25rem;
+      opacity: 1;
+
+      .subitem{
+        border:none;
+        margin: .25rem;
+        
+        a{
+          position: relative;
+          color : rgba(255,255,255,.7);
+          padding-left: 1rem;
+          font-size: .9rem;
+          letter-spacing: 1px;
+        
+          &:hover, &::before{
+            color: g.$main-color-light;
+          }
+        
+          &::before{
+            content: '';
+            left: 0;
+            top: 7px;
+            width: 6px;
+            height: 6px;
+            background-color: rgba(255,255,255,.5);
+            position: absolute;
+            transition: all .5s
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+  

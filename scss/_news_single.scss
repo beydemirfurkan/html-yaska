@@ -1,0 +1,61 @@
+@use "./global" as g;
+
+.single-box{
+  margin: 3rem 0;
+}
+
+.single-image{
+  padding: 2rem 1.25rem ;
+  background: g.$main-color
+}
+
+.si-content{
+
+  .item{
+
+    img{
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+}
+
+.single-text{
+  margin-top: 3rem;
+
+
+  p{
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
+
+    strong{
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  
+  .single-image{
+    width: 40%;
+    float: right;
+    padding: 3rem 3rem 3rem 0;
+  }
+
+  .si-content{
+    margin-left: -3rem;
+  }
+
+  .single-text{
+    margin-top: 0;
+    width: 49%;
+    margin-right: auto;
+  }
+}
